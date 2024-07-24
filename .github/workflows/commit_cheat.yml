@@ -5,8 +5,8 @@ on:
     branches:
       - master
 
-  # schedule:
-  #   - cron: "0 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 * * *" # See https://crontab.guru/#0_7,9,11,17,20_*_*_*
+  schedule:
+    - cron: "0 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 * * *" # See https://crontab.guru/#0_7,9,11,17,20_*_*_*
 
 jobs:
   auto_commit:
@@ -31,16 +31,16 @@ jobs:
           git config --global --add safe.directory /github/workspace
           git add -A
 
-          arr[0]="chore(bot): 😂 auto commit"
-          arr[1]="chore(bot): 😱 auto commit"
-          arr[2]="chore(bot): 👿 auto commit"
-          arr[3]="chore(bot): 💩 auto commit"
-          arr[4]="chore(bot): 🙏 auto commit"
-          arr[5]="chore(bot): 🙈 auto commit"
-          arr[6]="chore(bot): 🐐 auto commit"
-          arr[7]="chore(bot): 🤖 auto commit"
-          arr[8]="chore(bot): 🟩 auto commit"
-          arr[9]="chore(bot): 👻 auto commit"
+          arr[0]="Gimmick 😂 "
+          arr[1]="Gimmick 😱 "
+          arr[2]="Gimmick 👿 "
+          arr[3]="Gimmick 💩 "
+          arr[4]="Gimmick 🙏 "
+          arr[5]="Gimmick 🙈 "
+          arr[6]="Gimmick 🐐 "
+          arr[7]="Gimmick 🤖 "
+          arr[8]="Gimmick 🟩 "
+          arr[9]="Gimmick 👻 "
 
           rand=$[$RANDOM % ${#arr[@]}]
 
